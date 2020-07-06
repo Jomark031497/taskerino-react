@@ -1,13 +1,11 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-export class Header extends Component {
-    render() {
-        return (
-            <div className="header-container">
-                <h1>Project: Taskerino</h1>
-            </div>
-        )
-    }
+function Header() {
+    return (
+        <header className="header-container">
+            <h1>Project: Taskerino</h1>
+        </header>
+    )
 }
 
 export default Header

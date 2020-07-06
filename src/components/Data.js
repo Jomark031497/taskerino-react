@@ -1,18 +1,3 @@
+export const LOCAL_STORAGE_PROJECTS = "project.lists";
 
-export const data = [
-    {
-        id: 1,
-        taskName: "Learn Programming",
-        isCompleted: true
-    },
-    {
-        id: 2,
-        taskName: "Clean your room",
-        isCompleted: false,
-    },
-    {
-        id: 3, 
-        taskName: "Urn Reel Moni",
-        isCompleted: false,
-    }
-]
+export let projectList = JSON.parse(localStorage.getItem(LOCAL_STORAGE_PROJECTS)) || [];

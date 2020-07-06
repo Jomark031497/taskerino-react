@@ -1,56 +1,80 @@
 * {
-  padding: 0;
   margin: 0;
-  background: #111111;
-  color: white;
-  text-align: center;
+  padding: 0;
+  font-family: "lato", sans-serif;
 }
 
 .App {
-  text-align: center;
-}
-
-.main-content {
-  
-  margin: 20px 25% 20px 25%;
-}
-
-.task-container {
-  padding: 10px 0px 0px 0px;
-  display: flex;
-  padding: 10px 10px 20px 20%;
-  border-bottom: 1px solid white;
-  background: #1f1f1f;
-}
-
-.task-container input[type=checkbox]{
-  margin-right: 10px;
-  
-}
-
-.task-container span{
-  background: #1f1f1f;
+  height: 100vh;
 }
 
 .header-container {
+  background: #e50914;
   padding: 10px;
+}
+
+.content-container {
+  display: flex;
+}
+
+.project-container {
+  background: #131c25;
   color: #fff;
+  flex: 1;
+  height: 100vh;
+  text-align: center;
+  
+}
+
+.project-list-container {
+  padding: 10px;
+  list-style: none;
+
+}
+
+.project-list-container li {
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.task-container {
+  flex: 3;
   text-align: center;
 }
 
-.form-container input[type="text"] {
-  border: 5px dashed #fff;
-  height: 50px;
-  background: #1f1f1f;
-  color: #fff;
-  font-size: large;
+.footer-container {
+  background: black;
+  color: white;
 }
 
-.form-container input[type="submit"] {
-  border: 5px dashed #fff;
-  background: #1f1f1f;
-  margin-left: 10px;
-  height: 60px;
-  width: 100px;
+.add-task-button {
+  border: none;
+  padding: 10px;
+  font-size: large;
+  margin: 10px;
+  background: #131c25;
   color: #fff;
+  border-radius: 20px;
+  width: 200px;
+}
+
+.add-task-button:hover {
+  background: rgba(19, 28, 37, 0.8);
+}
+
+.add-project-form {
+  padding: 10px;
+}
+
+.add-project-button {
+  width: 40px;
+  border: none;
+  padding: 5px;
+  border-radius: 10px;
+  margin-left: 5px;
+}
+
+.add-project-button:hover {
+  background: blue;
+  color: white;
 }
