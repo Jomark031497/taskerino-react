@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/taskerino-react/precache-manifest.5a3041e880b5f9747fdd42aed5d1a64a.js"
+  "/taskerino-react/precache-manifest.9ba4dcd08890a98ca3f421017bb31618.js"
 );
 
 self.addEventListener('message', (event) => {
