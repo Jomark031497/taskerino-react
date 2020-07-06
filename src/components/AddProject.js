@@ -11,6 +11,8 @@ export class AddProject extends Component {
 
   handleSubmit = (e) => {
     e.preventDefault();
+    if (this.state.projectName === "" || this.state.projectName === null)
+      return;
     this.props.addProject(this.state.projectName);
     this.setState({ projectName: "" });
   };
@@ -23,8 +25,9 @@ export class AddProject extends Component {
           value={this.state.projectName}
           onChange={this.handleChange}
           name="projectName"
+          required
         />
-        <input type="submit" value="+" className="add-project-button"/>
+        <input type="submit" value="+" className="add-project-button" />
       </form>
     );
   }
