@@ -125,3 +125,11 @@
 .about-container { 
   padding: 10px;
 }
+
+.about-contents {
+  margin: 10px;
+}
+
+.learned-list {
+  margin-left: 20px;
+}

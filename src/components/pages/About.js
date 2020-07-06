@@ -3,9 +3,27 @@ import React from "react";
 function About() {
   return (
     <div className="about-container">
-      <h1>About</h1>
-      <h2>Project:Taskerino version 1.0.0</h2>
-      <p>Hotdog</p>
+      <div className="about-contents">
+        <br />
+        <h1>Project:Taskerino</h1>
+        <h3>
+          A Todo-list application based on the odin project lesson:{" "}
+          <a href="https://www.theodinproject.com/courses/javascript/lessons/frameworks">
+            The Odin Project:Frameworks
+          </a>
+        </h3>
+        <br />
+        <h1>What I Learned</h1>
+        <ul className="learned-list">
+          <li>Deploy React Apps on Github using gh-pages</li>
+          <li>Linting</li>
+          <li>Dynamic User Interface Interactions</li>
+          <li>Proper usage of forms</li>
+          <li>
+            <h4>Fundamentals of React</h4>
+          </li>
+        </ul>
+      </div>
     </div>
   );
 }
