@@ -10,7 +10,13 @@
 
 .header-container {
   background: #e50914;
-  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.body-container {
+  top: 20px;
 }
 
 .content-container {
@@ -23,28 +29,30 @@
   flex: 1;
   height: 100vh;
   text-align: center;
-  
 }
 
 .project-list-container {
   padding: 10px;
   list-style: none;
-
 }
 
 .project-list-container li {
-  margin-top: 10px;
+  margin: 10px 20px 5px 10px;
+  font-size: large;
   cursor: pointer;
+  text-align: start;
+  transition: 0.3s;
+  font-family: "lato", sans-serif;
+}
+
+.project-list-container li:hover {
+  background: rgb(19, 28, 37);
+  border-bottom: 1px dotted #fff;
 }
 
 .task-container {
   flex: 3;
   text-align: center;
-}
-
-.footer-container {
-  background: black;
-  color: white;
 }
 
 .add-task-button {
@@ -66,6 +74,7 @@
   padding: 10px;
 }
 
+
 .add-project-button {
   width: 40px;
   border: none;
@@ -77,4 +86,42 @@
 .add-project-button:hover {
   background: blue;
   color: white;
+}
+
+.nav-link {
+  margin-right: 10px;
+ 
+}
+
+.header-title {
+  color: #131c25;
+  text-decoration: none;
+  padding: 10px;
+  color: #131c25;
+}
+
+.links:hover {
+  border-bottom: 1px solid #000;
+  transition: ease-in-out;
+  color: #fff;
+}
+
+.nav-button {
+  border: none;
+  border-radius: 20px;
+  height: 40px;
+
+  padding: 0px 10px;
+  margin-right: 20px;
+  background: #131c25;
+  color: #fff;
+}
+
+.nav-button:hover {
+  background: rgba(19, 28, 37, 0.8);
+}
+
+
+.about-container {
+  padding: 10px;
 }

@@ -7,9 +7,15 @@ export class Tasks extends Component {
   render() {
     return (
       <div className="task-container">
-        <h3 className="task-project-name">{this.props.activeTask.name}</h3>
+        <div className="task-project-name">
+          {this.props.activeTask.name === "" ? (
+            <h2>Please select a project</h2>
+          ) : (
+            <h2>Project: {this.props.activeTask.name}</h2>
+          )}
+        </div>
         {this.props.activeTask.tasks.length === 0 ? (
-          <p>No tasks yet</p>
+          <h3>No tasks yet</h3>
         ) : (
           <ul className="task-list-container">
             {this.props.activeTask.tasks.map((task) => (
