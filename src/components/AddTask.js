@@ -20,16 +20,15 @@ export class AddTask extends Component {
 
   handleSubmit = (e) => {
     e.preventDefault();
-    this.props.addTask(
-      this.state.name,
-      this.state.priority,
-      this.state.description,
-      this.state.isFinished
-    );
+    const { name, priority, description, isFinished } = this.state;
+
+    if (name === "" || description === "") return;
+
+    this.props.addTask(name, priority, description, isFinished);
 
     this.setState({
       name: "",
-      priority: "",
+      priority: "High",
       description: "",
       isFinished: false,
       styleFlag: false,
@@ -58,6 +57,7 @@ export class AddTask extends Component {
               value={this.state.name}
               onChange={this.handleChange}
               name="name"
+              required
             />
             <br />
             <label htmlFor="taskPriority">Priority: </label>
@@ -80,6 +80,7 @@ export class AddTask extends Component {
               value={this.state.description}
               onChange={this.handleChange}
               name="description"
+              required
             ></textarea>
             <br />
             <input type="submit" value="Submit" />
