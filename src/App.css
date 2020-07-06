@@ -74,7 +74,6 @@
   padding: 10px;
 }
 
-
 .add-project-button {
   width: 40px;
   border: none;
@@ -90,7 +89,6 @@
 
 .nav-link {
   margin-right: 10px;
- 
 }
 
 .header-title {
@@ -98,6 +96,11 @@
   text-decoration: none;
   padding: 10px;
   color: #131c25;
+}
+
+.links {
+  color: #131c25;
+  text-decoration: none;
 }
 
 .links:hover {
@@ -121,8 +124,7 @@
   background: rgba(19, 28, 37, 0.8);
 }
 
-
-.about-container { 
+.about-container {
   padding: 10px;
 }
 
